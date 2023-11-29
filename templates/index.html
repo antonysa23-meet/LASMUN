@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>LASMUN</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/img/favicon.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <!-- <h1 class="logo me-auto"><a href="index.html">Arsha</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="../static/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="#register">Register</a></li>   
+
+          <!-- <li><a class="nav-link   scrollto" href="#portfolio">LASMUN 2023 Schedule</a></li> -->
+
+          <li><a class="nav-link scrollto" href="#team">Our Team</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQs</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+          <li class="dropdown"><a href="#" ><span>LASMUN 2023</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/schedule">Schedule</a></li>
+              <li class="dropdown"><a><span>Forums</span> <i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                    {%for forum in forums%}
+                    <li><a href="/forums/{{forum}}">{{forum}}</a></li>
+                    {%endfor%} 
+                  </ul>
+                </li>
+              <li><a href="/executives">Executives</a></li>
+              <li><a href="/officers">Student Officers</a></li>
+              <li><a href="/countryList">Country List</a></li>
+              <li><a href="/codeofconduct">Code of Conduct</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Welcome to LASMUN</h1>
+          <h2>La Salle Model United Nations</h2>
+          
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#register" class="btn-get-started scrollto">Register</a>
+            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="../static/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="../static/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="../static/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="../static/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="../static/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="../static/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="../static/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Cliens Section -->
+    
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-12" style="align-items: center;">
+            <h5 style="text-align: center;">
+              La Salle Beit Hanina School, steeped in history since its establishment in 1876 and it stands as a beacon of education and enlightenment. Today, we embark on a momentous journey with our very first Model United Nations (MUN) conference, a venture fueled by a passionate group of students inspired by the transformative potential of MUNs worldwide.
+            </h5>
+            <ul>
+              <br>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              <br>
+              The inception of this idea was sparked by a group of students who were inspired by the impact of other Model United Nations (MUNs), felt compelled to bring this transformative experience to their own school. Their vision was to recreate the essence of a MUN within the walls of La Salle Beit Hanina School, igniting a spark of intellectual curiosity and global awareness among their peers.
+With unwavering determination, we pledge to bring forth the very best in this MUN, for we believe in amplifying voices and championing rights. Every perspective deserves a platform, and every voice demands to be heard.
+
+            </p>
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            
+            
+            <p>
+              Our objectives stand as guiding stars, illuminating the path toward a deeper understanding of global issues and the honing of critical thinking skills. We aim to fortify diplomatic finesse, cultivating innovative solutions to pressing international challenges. Through meticulous research, eloquent public speaking, riveting debates, and persuasive writing, we forge the leaders of tomorrow, armed with the ability to navigate the complexities of our world.
+Distinguishing between the mechanisms of the parliament and the United Nations, we equip our delegates with the invaluable ability to discern power struggles from the art of diplomacy. We aspire to broaden international exposure, drawing insights and experiences from delegates in our regions and beyond.
+
+            </p>
+          </div>
+
+        
+          
+          <p>
+            <br>
+            Within our conference, each committee possesses a distinctive focus and purpose, serving as dynamic arenas where ideas collide and innovative solutions come to light. We cater to a diverse range of concerns:
+            <br>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <ul>
+                <li><i class="ri-check-double-line"></i>United Nations Relief and Works Agency (UNRWA)</li>
+                <li><i class="ri-check-double-line"></i>United Nations Economic and Social Council (ECOSOC)</li> 
+                <li><i class="ri-check-double-line"></i>Arab League (AL)</li>
+                <li><i class="ri-check-double-line"></i>North Atlantic Treaty Organisation(NATO)</li>
+                <li><i class="ri-check-double-line"></i>International Court of Justice (ICJ)</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <ul>
+                <li><i class="ri-check-double-line"></i>United Nations Environmental Programme (UNEP).</li>
+                <li><i class="ri-check-double-line"></i>United Nations Human Rights Council (UNHRC)</li>
+                <li><i class="ri-check-double-line"></i>United Nations Security Council (UNSC)</li>
+                <li><i class="ri-check-double-line"></i>World Health Organization (WHO)</li>
+                <li><i class="ri-check-double-line"></i>United Nations First General Assembly (UNGA1),</li>
+              </ul>
+            </div>
+            <br>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </p>
+          <br><br><br>
+          <p style="text-align: center;">Join us in this extraordinary journey through the heart of Jerusalem, in the vibrant halls of Beit Hanina. Together, let us stride forward, armed with knowledge, empathy, and a determination to shape a better world.</p>
+        </div>
+      </div>
+      </div>
+    </section><!-- End About Us Section -->
+    
+    <!-- ======= Register Section ======= -->
+    <section id="register" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Registeration</h2>
+          <p>Kindly fill out the matching registeration form in order to apply for LASMUN 2024!</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-2 col-md-2 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100"></div>
+          <div class="col-xl-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" onclick='window.location.href="https://docs.google.com/forms/d/1Qa9gEoozj65WaBx1KS9DZI8-5-obmKDo9hIMh9GbrvI/viewform?edit_requested=true";'>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bi-person-fill"></i></div>
+              <h4>Register As a Delegate</h4>
+              <p>A form is for Individual Delegation registration for LASMUN'24</p>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-4 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200" onclick='window.location.href="https://docs.google.com/forms/d/1Qa9gEoozj65WaBx1KS9DZI8-5-obmKDo9hIMh9GbrvI/viewform?edit_requested=true";'>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bi-people-fill"></i></div>
+              <h4>Register As a School</h4>
+              <p>A form for school MUN Club registration for LASMUN'24</p>
+            </div>
+          </div>
+        </div>
+          <div><br></div>
+          <div class="row">
+          <div class="col-xl-2 col-md-2 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" ></div>
+          <div class="col-xl-2 col-md-2 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100"></div>
+
+          <div class="col-xl-4 col-md-4 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300" onclick='window.location.href="https://docs.google.com/forms/d/1pXQDfiFCM9xCa_aScjoarzF9l5V_XNT2f4uvPPLM6Sc/viewform?edit_requested=true";'>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bi-person-fill-lock"></i></div>
+              <h4>Register As a Student Officer</h4>
+              <p>A form is for Student Officer Position registration for LASMUN'24</p>
+            </div>
+            
+          
+        </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End register Section -->
+
+
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-2 cta-btn-container text-center">
+            <!-- <a class="cta-btn align-middle" href="#">Call To Action</a> -->
+          </div>
+          <div class="col-lg-8 text-center text-lg-start">
+            <h3></h3>
+            <p> 
+              
+
+              We are thrilled to extend a warm welcome to you on behalf of our Model United Nations community. Your presence on our website marks the beginning of an exciting journey into the world of diplomacy, debate, and collaboration. <br><br><br>
+Here, you will find a wealth of resources, from informative articles to insightful guides, all designed to enhance your understanding of Model UN and help you excel in this dynamic field. We believe in fostering an environment of learning, where every voice is valued, and every perspective is considered. <br><br><br>
+Whether you are a seasoned MUN enthusiast or a newcomer eager to explore, we are confident that you will find inspiration and knowledge within these digital halls. Feel free to browse, engage, and connect with fellow delegates and enthusiasts. <br><br><br>
+If you have any questions, suggestions, or simply want to connect with us, please don't hesitate to reach out. Your feedback is invaluable to us, and we are here to support you in your MUN endeavors. <br><br><br>
+Once again, welcome to our Model United Nations website of LASMUN. We look forward to embarking on this enlightening journey with you.
+Warm regards,
+
+            </p>
+          </div>
+          <div class="col-lg-2 cta-btn-container text-center">
+            <!-- <a class="cta-btn align-middle" href="#">Call To Action</a> -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Our Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          {% for member in team %}
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100" style="margin-bottom: 20px; vertical-align: middle;">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="../static/img/team/{{member['pfp']}}" class="img-fluid" alt=""></div>
+              <div class="member-info" style="height: 100%; vertical-align: middle; margin-top: 37px;">
+                <h4>{{member['name']}}</h4>
+                <span>{{member['role']}}</span>
+                <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p> -->
+                <div class="social">
+                  <a href="{{member['twitter']}}"><i class="ri-twitter-fill"></i></a>
+                  <a href="{{member['facebook']}}"><i class="ri-facebook-fill"></i></a>
+                  <a href="{{member['instagram']}}"><i class="ri-instagram-fill"></i></a>
+                  <!-- <a href=""> <i class="ri-linkedin-box-fill"></i> </a> -->
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+          {%endfor%}
+
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    
+    
+    <!-- <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free Plan</h3>
+              <h4><sup>$</sup>0<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Get started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business Plan</h3>
+              <h4><sup>$</sup>29<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer Plan</h3>
+              <h4><sup>$</sup>49<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
+                <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    
+    
+    <!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>The are some of the most received questions for the LASMUN.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            {% for QA in questions%}
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-{{loop.index}}">{{QA['question']}}<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-{{loop.index}}" class="collapse " data-bs-parent=".faq-list">
+                <p>
+                  {{QA['answer']}}
+                </p>
+              </div>
+            </li>
+            {%endfor%}
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Here you can send a message with any request which our team will look into.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>24 Taha Hussein Street, Jerusalem</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>School Email:</h4>
+                <p>director@ls-bh.org</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+972 2-585-5764</p>
+              </div>
+
+              <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=31.837558938675976,%2035.22696983018129+(College%20Des%20Freres%20-%20Beit%20Hanina)&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population mapping</a></iframe></div>
+
+            </div>
+
+          </div>
+
+
+          <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form role="form" class="php-email-form" id="email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required id="message"></textarea>
+              </div>
+              <!-- <div class="g-recaptcha" data-sitekey="6Lc7v5MoAAAAALOrWD1lXh3rCng2w6Hf294lvFl7" style="text-align: center; margin: 0 auto; "></div> -->
+              <div style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                <div class="g-recaptcha" data-sitekey="6Lc7v5MoAAAAALOrWD1lXh3rCng2w6Hf294lvFl7"></div>
+            </div>
+              <div class="my-3">
+                <div class="loading" style="display: none !important;">Loading</div>
+                <div class="error-message" style="display: none !important;"> </div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="../static/js/db.js"></script>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <!-- 
+        <div class="footer-newsletter">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <h4>Join Our Newsletter</h4>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                <form action="" method="post">
+                  <input type="email" name="email"><input type="submit" value="Subscribe">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="container footer-bottom clearfix">
+        <div class="footer-top2">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-4 col-md-8 footer-contact">
+                <h3>La Salle Beit Hanina</h3>
+                <p>
+                  24 Taha Hussein Street<br>
+                  Jerusalem<br><br>
+                  <strong>Phone:</strong> +972 2-585-5764<br>
+                  <strong>Email:</strong> director@ls-bh.org<br>
+                </p>
+              </div>
+    
+              <div class="col-lg-4 col-md-8 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#about ">About us</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#team">Our team</a></li>
+                  <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
+                </ul>
+              </div>
+    
+              <!-- <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                </ul>
+              </div> -->
+    
+              <div class="col-lg-4 col-md-8 footer-links">
+                <h4>Our Social Networks</h4>
+                <p>Here are our schools social media Platforms</p>
+                <div class="social-links mt-3">
+                  <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                  <a href="https://www.facebook.com/LaSalleBeitHanina/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+                  <a href="https://www.ls-bh.org" class="google-plus"><i class="bx bxl-google"></i></a>
+                  <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+                </div>
+              </div>
+              <div><h6>This website and its content was made by: Antony Saleh</h6></div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </footer><!-- End Footer -->
+    
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/vendor/aos/aos.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../static/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../static/vendor/php-email-form/validate.js"></script>
+  
+  
+
+  <!-- Template Main JS File -->
+  <script src="../static/js/main.js"></script>
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+    <!-- ======= Skills Section ======= -->
+<!--     
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="../static/img/skills.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill">HTML <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">CSS <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Photoshop <i class="val">55%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+     -->
+    <!-- End Skills Section -->
+
+
+
+
+
+
+
+
+
+
+
+    
+      <!-- ======= Portfolio Section ======= -->
+      <!-- <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+
+          <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-card">Card</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img"><img src="../static/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <a href="../static/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-img"><img src="../static/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <a href="../static/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img"><img src="../static/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <a href="../static/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-img"><img src="../static/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <a href="../static/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-img"><img src="../static/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <a href="../static/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-img"><img src="../static/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <a href="../static/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-img"><img src="../static/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <a href="../static/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-img"><img src="../static/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <a href="../static/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-img"><img src="../static/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <a href="../static/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section> -->
+      <!-- End Portfolio Section -->

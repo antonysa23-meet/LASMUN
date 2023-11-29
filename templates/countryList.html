@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #1A2243;">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>LASMUN</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/img/favicon.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+
+  <!-- Template Main CSS File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body >
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center">
+  
+        <!-- <h1 class="logo me-auto"><a href="index.html">Arsha</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="../static/img/logo.png" alt="" class="img-fluid"></a>-->
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="/#">Home</a></li>
+            <li><a class="nav-link scrollto" href="/#about">About Us</a></li>
+            <li><a class="nav-link scrollto" href="/#register">Register</a></li>  
+            <!-- <li><a class="nav-link   scrollto" href="#portfolio">LASMUN 2023 Schedule</a></li> -->
+            
+            <li><a class="nav-link scrollto" href="/#team">Our Team</a></li>
+            <li><a class="nav-link scrollto" href="/#faq">FAQs</a></li>
+            <li><a class="nav-link scrollto" href="/#contact">Contact Us</a></li>
+
+            <li class="dropdown"><a href="#" class="active"><span>LASMUN 2023</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="/schedule">Schedule</a></li>
+                <li class="dropdown"><a><span>Forums</span> <i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                    {%for forum in forums%}
+                    <li><a href="/forums/{{forum}}">{{forum}}</a></li>
+                    {%endfor%} 
+                  </ul>
+                  </li>
+                <li><a href="/executives">Executives</a></li>
+                <li><a href="/officers">Student Officers</a></li>
+                <li><a href="/countryList">Country List</a></li>
+                <li><a href="/codeofconduct">Code of Conduct</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
+      </div>
+    </header><!-- End Header -->
+
+    <section id="hero" class="d-flex align-items-center" style=" text-align: center; height: 40vh; ">
+        
+      <div class="container">
+        
+        <div class="row">
+          <div class="container" style="text-align: center;"> 
+            <div class="row">
+              <div class="col-lg-12 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                <h1>The LASMUN's Country List</h1>
+                <h2>Here you can check out the country list of the the LASMUN event!</h2>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                  <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
+                </div>
+      
+          </div>
+        </section>
+        <section class="hero">
+            <div class="topnav"  data-aos="fade-up" data-aos-delay="200">
+                <input type="text" placeholder="Search..." id="search">
+              </div>
+        </section>
+          <section  class="d-flex align-items-center hero" style="overflow:visible !important; width: 100%;"  >
+            
+            <div class="row" style="width: 100%;" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-xl-4 col-md-4 d-flex align-items-stretch" >
+
+
+            <ul>
+                <li>Afghanistan </li><li>Albania </li><li>Algeria  </li><li>Argentina </li><li>Armenia </li><li>Australia </li><li>Azerbaijan  </li><li>Bahrain </li><li>Bangladesh </li><li>Belgium 
+                </li><li>Belize </li><li>Bolivia </li><li>Brazil </li><li>Bulgaria </li><li>Burkina Faso </li><li>Côte d'Ivoire  </li><li>Cameroon </li><li>Canada </li><li>Central African Republic </li><li>Chad </li><li>Chile
+                </li><li>China </li><li>Colombia </li><li>Comoros  </li><li>Costa Rica  </li><li>Croatia </li><li>Cuba </li><li>Cyprus  </li><li>Czech Republic </li><li>Democratic People's Republic of Korea (North Korea) 
+                </li><li>Denmark </li><li>Djibouti </li><li>Ecuador </li><li>Egypt </li><li>Eritrea </li><li>Estonia </li><li>Ethiopia  </li><li>Finland  </li><li>France  </li><li>Gambia  </li><li>Gabon </li><li>Germany 
+                </li><li>Greece </li><li>Guatemala </li><li>Guinea </li><li>Honduras </li><li>Hungary </li>
+            </ul>
+            </div>
+            <div class="col-xl-4 col-md-4 d-flex align-items-stretch" >
+            <ul>
+                <li>Iceland </li><li>India </li><li>Indonesia </li><li>Iran </li><li>Iraq </li><li>Ireland </li><li>Israel </li></li><li>Italy </li><li>Jamaica</li><li>Japan </li><li>Jordan  
+                </li><li>Kazakhstan </li><li>Kenya </li><li>Kuwait </li><li>Kyrgyzstan </li><li>Lao People's Democratic Republic </li><li>Latvia </li>
+                <li>Lebanon </li><li>Lesotho</li><li>Liberia </li><li>Libya </li><li>Liechtenstein  </li><li>Lithuania  </li><li>Luxembourg </li><li>Madagascar </li><li>Malawi </li><li>Malaysia  </li><li>Maldives  </li>
+                <li>Mali </li><li>Malta  </li><li>Mauritania </li><li>Mexico </li><li>Moldova</li><li>Montenegro</li><li>Morocco  </li><li>Mozambique  </li><li>Myanmar (Burma) </li><li>Namibia</li><li>Nepal </li>
+                <li>Netherlands </li><li>New Zealand </li><li>Nicaragua</li><li>Niger </li><li>Nigeria </li><li>North Macedonia </li><li>Norway </li><li>Oman </li>
+            </ul>
+            </div>
+            <div class="col-xl-4 col-md-4 d-flex align-items-stretch" d>
+            <ul>
+                <li>Pakistan </li><li>Palestine </li><li>Panama</li><li>Paraguay </li><li>Peru </li><li>Philippines</li><li>Poland </li><li>Portugal </li>
+                <li>Qatar </li><li>Republic of Korea (South Korea) </li><li>Romania </li><li>Russian Federation </li><li>Saudi Arabia </li>
+                <li>Senegal </li><li>Serbia </li><li>Seychelles</li><li>Sierra Leone</li><li>Singapore</li><li>Slovakia </li><li>Slovenia </li><li>Somalia  </li><li>South Africa </li><li>South Sudan </li><li>Spain </li>
+                <li>Sri Lanka</li><li>Sudan  </li><li>Sweden</li><li>Switzerland</li><li>Syria</li><li>Tajikistan</li><li>Tanzania</li><li>Thailand</li><li>Tunisia</li><li>Turkey</li><li>Uganda</li>
+                <li>Ukraine</li><li>United Arab Emirates</li><li>United Kingdom</li><li>United States of America</li><li>Uruguay</li><li>Uzbekistan</li><li>Venezuela</li><li>Vietnam</li><li>Yemen</li>
+                <li>Zambia</li><li>Zimbabwe</li>
+
+            </ul>
+        </div>
+      </div>
+    </div>
+  
+    </section><!-- End Hero -->
+
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <!-- Vendor JS Files -->
+    <script src="../static/vendor/aos/aos.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../static/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../static/vendor/php-email-form/validate.js"></script>
+    
+    
+  
+    <!-- Template Main JS File -->
+    <script src="../static/js/main.js"></script>
+  
+
+    
+  </body>
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <!-- 
+        <div class="footer-newsletter">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <h4>Join Our Newsletter</h4>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                <form action="" method="post">
+                  <input type="email" name="email"><input type="submit" value="Subscribe">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="container footer-bottom clearfix">
+        <div class="footer-top2">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-4 col-md-8 footer-contact">
+                <h3>La Salle Beit Hanina</h3>
+                <p>
+                  24 Taha Hussein Street<br>
+                  Jerusalem<br><br>
+                  <strong>Phone:</strong> +972 2-585-5764<br>
+                  <strong>Email:</strong> director@ls-bh.org<br>
+                </p>
+              </div>
+    
+              <div class="col-lg-4 col-md-8 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#team">Our team</a></li>
+                  <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li> -->
+                </ul>
+              </div>
+    
+              <!-- <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                </ul>
+              </div> -->
+    
+              <div class="col-lg-4 col-md-8 footer-links">
+                <h4>Our Social Networks</h4>
+                <p>Here are our schools social media Platforms</p>
+                <div class="social-links mt-3">
+                  <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                  <a href="https://www.facebook.com/LaSalleBeitHanina/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+                  <a href="https://www.ls-bh.org" class="google-plus"><i class="bx bxl-google"></i></a>
+                  <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+        </div>
+      </footer><!-- End Footer -->
+      <script src="../static/js/search.js"></script>
+      <style>
+        .hero {
+  width: 100%;
+
+  background: #1A2243;
+}
+
+.hero .container {
+  padding-top: 72px;
+}
+
+.hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+.hero h2 {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+.hero .btn-get-started {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  color: #fff;
+  background: #47b2e4;
+}
+
+.hero .btn-get-started:hover {
+  background: #209dd8;
+}
+
+.hero .btn-watch-video {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  margin: 10px 0 0 25px;
+  color: #fff;
+  line-height: 1;
+}
+
+.hero .btn-watch-video i {
+  line-height: 0;
+  color: #fff;
+  font-size: 32px;
+  transition: 0.3s;
+  margin-right: 8px;
+}
+
+.hero .btn-watch-video:hover i {
+  color: #47b2e4;
+}
+
+.hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero .animated {
+    animation: none;
+  }
+
+  .hero .hero-img {
+    text-align: center;
+  }
+
+  .hero .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero .hero-img img {
+    width: 80%;
+  }
+
+  .hero .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.hero div ul{
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    vertical-align: top;
+    padding: 0;
+    width: 100%;
+}
+.hero div{
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 15px;
+    
+
+}
+
+
+
+
+      </style>
+  </html>
